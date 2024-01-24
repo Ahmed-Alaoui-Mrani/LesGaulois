@@ -2,44 +2,17 @@ package personnages;
 
 import personnages.Romain;
 
-public class Romain {
-	    private String nom;
-	    private int force;
-
-	    // Constructeur
-	    public Romain(String nom, int force) {
-	        this.nom = nom;
-	        this.force = force;
+public class Romain extends Personnage{
+	 public Romain(String nom, int force) {
+	        super(nom, force);
 	    }
 
-	    // Getter pour le nom
-	    public String getNom() {
-	        return nom;
+	    
+	    protected String donnerAuteur() {
+	        return "Le Romain " + nom;
 	    }
-	    
-	    //Getter pour le force
-	    public int getForce() {
-	        return force;
+	    public void frapper(Gaulois adversaire) {
+	        System.out.println(donnerAuteur() + " donne un grand coup au gaulois " + adversaire.getNom() + ".");
+	        adversaire.recevoirCoup(force / 3);
 	    }
-	    
-	 // Nouvelle méthode parler pour les Romains
-	    public void parler(String texte) {
-	        System.out.println("Le Romain " + nom + " : \"" + texte + "\".");
-	    }
-	    
-	    
-	    // Nouvelle méthode pour recevoir un coup
-	    public void recevoirCoup(int forceDuCoup) {
-	        force -= forceDuCoup;
-	        if (force < 0) {
-	            force = 0;
-	        }
-
-	        if (force > 0) {
-	            parler("Aïe !");
-	        } else {
-	            parler("J'abandonne...");
-	        }
-	    
-	        }
 	    }
