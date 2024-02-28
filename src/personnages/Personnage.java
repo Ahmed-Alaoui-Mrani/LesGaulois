@@ -38,5 +38,9 @@ public abstract class Personnage {
     }
     protected abstract String donnerAuteur();
     
+    public boolean estATerre() {
+        return force <= 0;
+    }
+    
 }
 
