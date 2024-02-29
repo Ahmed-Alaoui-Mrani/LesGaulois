@@ -15,9 +15,9 @@ public class TestSites {
       //Gaulois prolix = new Gaulois("Prolix", 2);
         
         // Création des Soldats
-        Soldat briseradius = new Soldat("Briseradius", 4, "SOLDAT");
+     /*   Soldat briseradius = new Soldat("Briseradius", 4, "SOLDAT");
         Soldat chorus = new Soldat("Chorus", 4, "CENTURION"); // Création de Chorus
-        Soldat brutus = new Soldat("Brutus", 5, "CENTURION");
+        Soldat brutus = new Soldat("Brutus", 5, "CENTURION"); */
         /*
         Soldat milexcus = new Soldat("Milexcus", 2, "SOLDAT");
         Soldat tulliusOctopus = new Soldat("Tullius Octopus", 2, "TESSERARIUS");
@@ -28,13 +28,13 @@ public class TestSites {
         Village village = new Village(vercingetorix);
         
      // Création du camp avec Minus comme commandant
-        Camp camp = new Camp(brutus); 
+       // Camp camp = new Camp(brutus); 
         
 
         // Ajout des villageois et des soldats au village et au camp
         village.ajouterVillageois(abraracourcix);
-        camp.ajouterSoldat(briseradius);
-        camp.ajouterSoldat(chorus);
+     //   camp.ajouterSoldat(briseradius);
+     //   camp.ajouterSoldat(chorus);
         /*
         camp.ajouterSoldat(brutus);
         camp.ajouterSoldat(milexcus);
@@ -65,8 +65,8 @@ public class TestSites {
 
         // Appel des méthodes pour changer le chef du village et le commandant du camp
         village.changerChef(abraracourcix);
-        camp.changerCommandant(briseradius);
-        camp.changerCommandant(chorus);
+      //  camp.changerCommandant(briseradius);
+     //   camp.changerCommandant(chorus);
     }
 }
 

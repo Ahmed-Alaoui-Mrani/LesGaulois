@@ -1,15 +1,17 @@
 package personnages;
 
-public class Soldat extends Romain {
-	    private String grade;
+import test_fonctionnel.*;
 
-	    public Soldat(String nom, int force, String grade) {
+public class Soldat extends Romain {
+	    private Grade grade;
+
+	    public Soldat(String nom, int force, Grade grade) {
 	        super(nom, force);
 	        this.grade = grade;
 	    }
 
 	    // Getter pour le grade
-	    public String getGrade() {
+	    public Grade getGrade() {
 	        return grade;
 	    }
 
